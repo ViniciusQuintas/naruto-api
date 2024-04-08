@@ -1,79 +1,107 @@
-# Vuetify (Default)
+# Naruto API
+Essa é uma aplicação web desenvolvida em Vue.js que permite aos usuários explorar informações relacionadas ao universo do anime Naruto. A aplicação consome a API "NarutoDB", fornecendo dados como todos os personagens, personagens da Akatsuki, Bestas de cauda, informações detalhadas de jutsus e outras informações relevantes de cada personagem.
+<br>
+<br>
+![page](src/assets/screenshots/introduction.png)
 
-This is the official scaffolding tool for Vuetify, designed to give you a head start in building your new Vuetify application. It sets up a base template with all the necessary configurations and standard directory structure, enabling you to begin development without the hassle of setting up the project from scratch.
+# Introdução
+Bem-vindo ao "Naruto API", uma aplicação criada para os fãs de Naruto explorarem informações detalhadas sobre o universo do anime. Esta aplicação web foi desenvolvida em Vue.js, utilizando Vite para a construção rápida e eficiente do projeto, e Vuetify para uma interface elegante e responsiva.
+<br>
+<br>
+Você pode acessar e testar a aplicação hospedada na Vercel **[clicando aqui.](https://naruto-api-viniciusquintas-projects.vercel.app/)** 
 
-## ❗️ Important Links
+# Design e Funcionalidades
+A aplicação apresenta uma interface intuitiva e fácil de usar, com as seguintes funcionalidades:
 
-- 📄 [Docs](https://vuetifyjs.com/)
-- 🚨 [Issues](https://issues.vuetifyjs.com/)
-- 🏬 [Store](https://store.vuetifyjs.com/)
-- 🎮 [Playground](https://play.vuetifyjs.com/)
-- 💬 [Discord](https://community.vuetifyjs.com)
+- **Página de Introdução:** Apresenta uma introdução ao projeto e sua funcionalidade principal.
+- **Página "Characters":** Exibe todos os personagens do anime Naruto, permitindo busca por nome e detalhes sobre cada personagem.
+- **Página "Akatsuki":** Lista todos os personagens da organização criminosa Akatsuki, com informações detalhadas sobre cada membro.
+- **Página "Tailed Beasts"**: Apresenta as Bbstas de cauda do anime, com informações sobre cada uma delas.
+Além disso, a aplicação utiliza o Axios para realizar o consumo da API "NarutoDB" de forma eficiente e organizada. As informações são apresentadas em cards responsivos, proporcionando uma experiência de usuário agradável.
 
-## 💿 Install
+# Tecnologias Utilizadas
+O projeto foi construído utilizando as seguintes tecnologias:
 
-Set up your project using your preferred package manager. Use the corresponding command to install the dependencies:
+- **Vue.js:** Framework JavaScript para construção de interfaces de usuário dinâmicas.
+- **Vite:** Build tool rápida e eficiente para projetos Vue.js.
+- **Vuetify:** Biblioteca de componentes Vue.js para design responsivo e moderno.
+- **Axios:** Cliente HTTP para realizar requisições à API de forma simplificada e organizada.
 
-| Package Manager                                                | Command        |
-|---------------------------------------------------------------|----------------|
-| [yarn](https://yarnpkg.com/getting-started)                   | `yarn install` |
-| [npm](https://docs.npmjs.com/cli/v7/commands/npm-install)     | `npm install`  |
-| [pnpm](https://pnpm.io/installation)                          | `pnpm install` |
-| [bun](https://bun.sh/#getting-started)                        | `bun install`  |
+# API
+A aplicação consome a API "NarutoDB" para obter informações sobre personagens, Akatsuki, Tailed Beasts, jutsus e outras informações do anime Naruto. A API oferece endpoints para diferentes tipos de consultas, possibilitando uma ampla gama de informações sobre o universo de Naruto.
+<br>
+<br>
+Para mais detalhes sobre a API "NarutoDB", consulte a documentação oficial em [https://narutodb.xyz/docs](https://narutodb.xyz/docs).
 
-After completing the installation, your environment is ready for Vuetify development.
+# Estrutura do Projeto
+O projeto "Naruto API" está estruturado da seguinte forma:
 
-## ✨ Features
+- **Pasta components:** Contém componentes reutilizáveis utilizados em diferentes partes da aplicação.
+    <br>
+    <br>
+  - **FormComponent:** Componente para a barra de pesquisa e filtragem de dados.
+    <br>
+  - **HeaderComponent:** Componente do menu de navegação lateral.
+    <br>
+  - **ItensComponent:** Componente para exibição dos itens em cards responsivos.
 
-- 🖼️ **Optimized Front-End Stack**: Leverage the latest Vue 3 and Vuetify 3 for a modern, reactive UI development experience. [Vue 3](https://v3.vuejs.org/) | [Vuetify 3](https://vuetifyjs.com/en/)
-- 🗃️ **State Management**: Integrated with [Pinia](https://pinia.vuejs.org/), the intuitive, modular state management solution for Vue.
-- 🚦 **Routing and Layouts**: Utilizes Vue Router for SPA navigation and vite-plugin-vue-layouts for organizing Vue file layouts. [Vue Router](https://router.vuejs.org/) | [vite-plugin-vue-layouts](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
-- ⚡ **Next-Gen Tooling**: Powered by Vite, experience fast cold starts and instant HMR (Hot Module Replacement). [Vite](https://vitejs.dev/)
-- 🧩 **Automated Component Importing**: Streamline your workflow with unplugin-vue-components, automatically importing components as you use them. [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
+<br>
 
-These features are curated to provide a seamless development experience from setup to deployment, ensuring that your Vuetify application is both powerful and maintainable.
+- **Pasta pages:** Contém as páginas principais da aplicação.
+    <br>
+    <br>
+  - **index.vue:** Página de introdução do projeto.
+    <br>
+  - **Characters.vue:** Página para exibir todos os personagens do anime.
+    <br>
+  - **Akatsuki.vue:** Página para listar os personagens da Akatsuki.
+    <br>
+  - **Beasts.vue:** Página para apresentar as Tailed Beasts.
+    <br>
+    
+Arquivo axios.js: Configuração do Axios para realizar as requisições à API "NarutoDB".
 
-## 💡 Usage
 
-This section covers how to start the development server and build your project for production.
-
-### Starting the Development Server
-
-To start the development server with hot-reload, run the following command. The server will be accessible at [http://localhost:3000](http://localhost:3000):
-
+# Como executar o projeto
+Para utilizar esse projeto na sua máquina local siga estas etapas:
+- Certifique-se de ter o **Node.js** e o **npm** instalados em sua máquina.
+- Clone o repositório para sua máquina local utilizando o seguinte comando:
 ```bash
-yarn dev
+  git clone https://github.com/ViniciusQuintas/naruto-api.git
 ```
-
-(Repeat for npm, pnpm, and bun with respective commands.)
-
-> Add NODE_OPTIONS='--no-warnings' to suppress the JSON import warnings that happen as part of the Vuetify import mapping. If you are on Node [v21.3.0](https://nodejs.org/en/blog/release/v21.3.0) or higher, you can change this to NODE_OPTIONS='--disable-warning=5401'. If you don't mind the warning, you can remove this from your package.json dev script.
-
-### Building for Production
-
-To build your project for production, use:
-
+- Após clonar o repositório, navegue até o diretório do projeto no terminal:
 ```bash
-yarn build
+  cd naruto-api
 ```
+- Instale todas as dependências do projeto listadas no arquivo `package.json` com o seguinte comando:
+```bash
+  npm install
+```
+- Após a instalação das dependências, execute o seguinte comando para para iniciar o servidor de desenvolvimento.
+```bash
+  npm run dev
+```
+- Por fim, abra o navegador e acesse `http://localhost:3000` para visualizar a aplicação.
 
-(Repeat for npm, pnpm, and bun with respective commands.)
+# Contribuição
+Se você deseja contribuir para o desenvolvimento desse projeto, siga os seguintes passos:
 
-Once the build process is completed, your application will be ready for deployment in a production environment.
+ 1️⃣ Faça um fork deste repositório. 
+<br>
+<br>
+ 2️⃣ Crie uma nova branch para sua contribuição. 
+<br>
+<br>
+ 3️⃣ Faça suas alterações no código. 
+<br>
+<br>
+ 4️⃣ Certifique-se de que suas alterações não quebram o funcionamento existente do projeto. 
+<br>
+<br>
+ 5️⃣ Faça um pull request com suas alterações. 
+<br>
+<br>
 
-## 💪 Support Vuetify Development
 
-This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library with a comprehensive collection of Vue components. Vuetify is an MIT licensed Open Source project that has been made possible due to the generous contributions by our [sponsors and backers](https://vuetifyjs.com/introduction/sponsors-and-backers/). If you are interested in supporting this project, please consider:
-
-- [Requesting Enterprise Support](https://support.vuetifyjs.com/)
-- [Sponsoring John on Github](https://github.com/users/johnleider/sponsorship)
-- [Sponsoring Kael on Github](https://github.com/users/kaelwd/sponsorship)
-- [Supporting the team on Open Collective](https://opencollective.com/vuetify)
-- [Becoming a sponsor on Patreon](https://www.patreon.com/vuetify)
-- [Becoming a subscriber on Tidelift](https://tidelift.com/subscription/npm/vuetify)
-- [Making a one-time donation with Paypal](https://paypal.me/vuetify)
-
-## 📑 License
-[MIT](http://opensource.org/licenses/MIT)
-
-Copyright (c) 2016-present Vuetify, LLC
+# Licença
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter mais informações.
