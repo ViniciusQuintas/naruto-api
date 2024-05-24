@@ -1,5 +1,5 @@
 # Naruto API
-Essa é uma aplicação web desenvolvida em Vue.js que permite aos usuários explorar informações relacionadas ao universo do anime Naruto. A aplicação consome a API "NarutoDB", fornecendo dados como todos os personagens, personagens da Akatsuki, Bestas de cauda, informações detalhadas de jutsus e outras informações relevantes de cada personagem.
+Essa é uma aplicação web desenvolvida em Vue.js que permite aos usuários explorar informações relacionadas ao universo do anime Naruto. A aplicação consome a API "NarutoDB", fornecendo dados como todos os personagens, personagens da Akatsuki, Bestas de cauda, informações detalhadas de jutsus e outras informações relevantes de cada personagem
 <br>
 <br>
 ![page](src/assets/screenshots/introduction.png)
